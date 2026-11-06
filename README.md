@@ -9,3 +9,8 @@ Create code to run the algorithm.
 Chemical Engineering Company:
 Better catalysts but do not want to do them manually. need some sort of computation to do that. Likely a Quantum edge
 Some other step where standard computation is easier. Likely dont need quantum work due to additional cost with little upsides.
+
+
+Easy problem-quantum and standard code to actually compare the two. talk about trade-offs.
+
+Catalyst simulation- Code if we have time. but discuss how even if quantum computing is not always right, it helps filter out chemicals that will absolutely not work.
