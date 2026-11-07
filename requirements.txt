@@ -1,0 +1,15 @@
+# Shared scientific and notebook runtime dependencies
+numpy
+scipy
+ipykernel
+
+# Chemistry and quantum-computing notebook (IQC (2).ipynb)
+pyscf
+qiskit>=2.4,<3
+qiskit-nature
+qbraid
+
+# Drug-selection QAOA benchmark
+qiskit-addon-opt-mapper>=0.1,<0.2
+pandas
+matplotlib
