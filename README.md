@@ -5,9 +5,9 @@ Step 2: create a story as to why the client is possibly interested. Maybe they t
 Create code to run the algorithm. 
 
 Question:
-**Nova Therapeutics – Can Quantum Computing Improve Drug Discovery?**
+**X Pharmaceutics Co. – Can Quantum Computing Improve Drug Discovery?**
 
-At Nova Therapeutics, we're looking for ways to make drug discovery faster and less expensive. We face two major challenges: understanding complex molecular interactions and screening potential drug candidates to eliminate those unlikely to succeed.
+At X Pharmaceutics Co., we're looking for ways to make drug discovery faster and less expensive. We face two major challenges: understanding complex molecular interactions and screening potential drug candidates to eliminate those unlikely to succeed.
 
 We've heard the hype surrounding quantum computing, but we want to know: **Could quantum computers solve either problem better than traditional computers?**
 
