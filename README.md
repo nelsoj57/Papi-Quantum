@@ -15,7 +15,7 @@ We're comparing quantum algorithms for molecular modeling with classical methods
 
 
 
-Answer- Understanding complex molecular interactions is not something that can be done easily. Without quantum computing, it is dangerouse to do in real life. or expensive very computationally demanding, and time-consuming to do computationally. Need to prove that quantum computing CCOULD be useful to lessen these costs or make it safer.
+Answer- Understanding complex molecular interactions is not something that can be done easily. Without quantum computing, it is dangerouse to do in real life. or expensive very computationally demanding, and time-consuming to do computationally. Need to prove that quantum computing could be useful to lessen these costs or make it safer.
 
 For screening potential drug candidates, standard computation is better as less noise is produced and quantum computation is not necessary to solve. it may be faster, but will likely not be as accurate.
 
