@@ -108,6 +108,8 @@ def coefficient_gamma_transfer(source_model, target_model, params, threshold=0.2
         float(source_vector @ target_vector / source_norm_squared)
         if source_norm_squared > 0 else np.nan
     )
+    # Diagnostic: distinguish truly identical models from differences hidden by rounding.
+    max_coefficient_change = float(np.max(np.abs(target_vector - source_vector)))
     fit_error = np.linalg.norm(target_vector - ratio * source_vector)
     residual = float(fit_error / max(np.linalg.norm(target_vector), 1e-12))
     if not np.isfinite(ratio) or ratio <= 0 or residual > threshold:
@@ -116,6 +118,7 @@ def coefficient_gamma_transfer(source_model, target_model, params, threshold=0.2
             "reason": "Hamiltonians not close to proportional",
             "ratio": ratio,
             "residual": residual,
+            "max_coefficient_change": max_coefficient_change,
         }
 
     result = params.copy()
@@ -127,4 +130,5 @@ def coefficient_gamma_transfer(source_model, target_model, params, threshold=0.2
         "reason": "approximate coefficient scaling",
         "ratio": ratio,
         "residual": residual,
+        "max_coefficient_change": max_coefficient_change,
     }

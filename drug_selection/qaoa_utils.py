@@ -309,6 +309,7 @@ def sample_qaoa(model, params, shots, optimum=None, target_fraction=0.95, seed=4
     values = instance["values"]
     budget = instance["budget"]
     successes = 0
+    optimal_hits = 0
     feasible_shots = 0
     best_selection = None
     best_value = float("-inf")
@@ -334,6 +335,8 @@ def sample_qaoa(model, params, shots, optimum=None, target_fraction=0.95, seed=4
         )
         if meets_target:
             successes += int(count)
+        if feasible and optimum is not None and abs(value - optimum) <= 0.0051:
+            optimal_hits += int(count)
         rows.append({
             "selection": selected,
             "count": int(count),
@@ -346,8 +349,10 @@ def sample_qaoa(model, params, shots, optimum=None, target_fraction=0.95, seed=4
         "best_sampled": best_selection,
         "best_sampled_value": best_value if best_selection is not None else np.nan,
         "prob_target_sampled": successes / shots if optimum is not None else np.nan,
+        "prob_optimal_sampled": optimal_hits / shots if optimum is not None else np.nan,
         "prob_feasible_sampled": feasible_shots / shots,
         "target_hits": successes,
+        "optimal_hits": optimal_hits,
         "shots": int(shots),
         "outcomes": rows,
         "sampling_seconds": perf_counter() - start,
