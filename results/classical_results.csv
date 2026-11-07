@@ -1,0 +1,4 @@
+Method,Value ($M),Cost ($M),Wall time (ms),Selected drugs,Quality (% of optimum)
+Dynamic programming,97.24000000000001,16,0.02283597132191062,"['Drug_2', 'Drug_3', 'Drug_5', 'Drug_7']",99.99999999999999
+Branch and bound,97.24000000000001,16,0.023262982722371817,"['Drug_2', 'Drug_3', 'Drug_5', 'Drug_7']",99.99999999999999
+Greedy,97.24000000000001,16,0.004709989298135042,"['Drug_2', 'Drug_3', 'Drug_5', 'Drug_7']",99.99999999999999
